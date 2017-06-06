@@ -41,7 +41,7 @@ Razred, ki hrani vse zahtevane podatke iz navodil.
 Zavedam se, da izvedba ni optimalna. Zaradi pomanjkanja izkušenj, časa in znanja mi ni uspelo
 ustvariti boljše rešitve. 
 
-##### Pomanjkljivosti:
+##### Pomanjkljivosti :
 * ni avtentikacije
 * ni določljivega intervala sprejemanja
 * preverjanje vhodnih podatkov je zelo osnovno
