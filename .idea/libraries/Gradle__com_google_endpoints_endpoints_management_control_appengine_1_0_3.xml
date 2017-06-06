@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.endpoints:endpoints-management-control-appengine:1.0.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.endpoints/endpoints-management-control-appengine/1.0.3/85d6138f8bec70980c637b9d77b18b645225a36b/endpoints-management-control-appengine-1.0.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.endpoints/endpoints-management-control-appengine/1.0.3/89a116dc7b7987ba32ff4ed8ffee5095a9651a36/endpoints-management-control-appengine-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

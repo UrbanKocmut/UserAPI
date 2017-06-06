@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.endpoints:endpoints-management-api-client:1.0.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.endpoints/endpoints-management-api-client/1.0.3/72e7a1f2836f7d129c3b6074effcc001c0bf4933/endpoints-management-api-client-1.0.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.endpoints/endpoints-management-api-client/1.0.3/e8a57e63bed12310a69cd12e7678346850c0e6e0/endpoints-management-api-client-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
