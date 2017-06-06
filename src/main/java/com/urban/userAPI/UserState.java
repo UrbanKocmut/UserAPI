@@ -1,9 +1,6 @@
 package com.urban.userAPI;
 
 
-import com.google.appengine.api.datastore.DatastoreService;
-import com.google.appengine.api.datastore.Entity;
-
 /**
  * Object that will be received and sent
  */
@@ -15,30 +12,10 @@ public class UserState {
 	private Long highscore;
 
 	// TRUE if platform is Android, FALSE if iOS
-	private Boolean isAndroid;
+	private String platform;
 	private String countryCode; // Dont know the country code format so its a String
 	private String languageCode; // same ^
 
-	public UserState(Entity q) {
-		this.userId = (Long) q.getProperty("userId");
-		this.email = (String) q.getProperty("email");
-		this.username = (String) q.getProperty("username");
-		this.highscore = (Long) q.getProperty("highscore");
-		this.isAndroid = (Boolean) q.getProperty("isAndroid");
-		this.countryCode = (String) q.getProperty("countryCode");
-		this.languageCode = (String) q.getProperty("languageCode");
-	}
-
-	public void saveToDatastore(DatastoreService datastore) {
-		Entity userState = new Entity("UserState", userId);
-		userState.setProperty("email", email);
-		userState.setProperty("username", username);
-		userState.setProperty("highscore", highscore);
-		userState.setProperty("isAndroid", isAndroid);
-		userState.setProperty("countryCode", countryCode);
-		userState.setProperty("languageCode", languageCode);
-		datastore.put(userState);
-	}
 
 	public long getUserId() {
 		return userId;
@@ -72,14 +49,6 @@ public class UserState {
 		this.highscore = highscore;
 	}
 
-	public boolean isAndroid() {
-		return isAndroid;
-	}
-
-	public void setAndroid(Boolean android) {
-		isAndroid = android;
-	}
-
 	public String getCountryCode() {
 		return countryCode;
 	}
@@ -94,5 +63,13 @@ public class UserState {
 
 	public void setLanguageCode(String languageCode) {
 		this.languageCode = languageCode;
+	}
+
+	public String getPlatform() {
+		return platform;
+	}
+
+	public void setPlatform(String platform) {
+		this.platform = platform;
 	}
 }

@@ -30,16 +30,11 @@ public class RankingAPI {
 
 	@ApiMethod(name = "returnHighscores", httpMethod = "GET")
 	public List<Entity> returnHighscores() {
-		return getTop100Highscores();
-	}
-
-	private List<Entity> getTop100Highscores() {
 		Query q = new Query("UserState").addSort("highscore", Query.SortDirection.DESCENDING);
 		q.addProjection(new PropertyProjection("highscore", Long.class));
 		q.addProjection(new PropertyProjection("username", String.class));
 		PreparedQuery pq = datastore.prepare(q);
 		return pq.asList(FetchOptions.Builder.withLimit(100));
 	}
-
 
 }
